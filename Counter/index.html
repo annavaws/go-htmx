@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTMX Go Counter</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script
-      src="https://unpkg.com/htmx.org@1.9.4"
-      integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-
-  <body>
+{{ template "base.html" .}}
+{{ define "title" }}Go HTMX Counter{{ end }}
+{{ define "content"}}
     <div class="flex flex-col min-h-screen">
       <div class="flex justify-center items-center flex-grow">
         <div id="counter" class="text-5xl font-bold">{{.CounterValue}}</div>
@@ -50,5 +38,4 @@
       </div>
     </div>
     
-  </body>
-</html>
+{{ end }}

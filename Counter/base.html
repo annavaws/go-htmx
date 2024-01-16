@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTMX Go Counter</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>HTMX Go Counter</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script
       src="https://unpkg.com/htmx.org@1.9.4"
       integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV"
       crossorigin="anonymous"
-    ></script>
-  </head>
+      ></script>
+    </head>
+    <body>
+      {{block "content" .}}{{end}}
+    </body>
+</html>
